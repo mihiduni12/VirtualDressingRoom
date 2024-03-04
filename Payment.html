@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total Bill Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            margin-bottom: 50px;
+            font-size: 24px;
+        }
+
+        .bill-container {
+            text-align: left;
+            width: 300px;
+        }
+
+        .bill-item {
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+        }
+
+        .Total {
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        #totalAmount {
+            font-weight: bold;
+        }
+
+        #totalContainer {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        #paymentDropdown {
+            margin-top: 10px;
+            width: 10%;
+        }
+
+        #payButton {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 10%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Total Bill</h1>
+
+    <div class="bill-container">
+        <div class="bill-item">
+            <span>Spa Bill:</span>
+            <span id="spaAmount">0.00</span>
+        </div><br>
+        <div class="bill-item">
+            <span>Tour Bill:</span>
+            <span id="tourAmount">0.00</span>
+        </div><br>
+        <div class="bill-item">
+            <span>Shop Bill:</span>
+            <span id="shopAmount">0.00</span>
+        </div><br>
+        <div class="bill-item">
+            <span>Ticket Bill:</span>
+            <span id="ticketAmount">0.00</span>
+        </div><br>
+        <div class="Total">
+            <span>Total Amount:</span>
+            <span id="totalAmount">0.00</span>
+        </div><br>
+    </div>
+    <label>Select Payment method</label>
+    <select id="paymentDropdown">
+        <option value="card">Card</option>
+        <option value="Slip">Upload Slip</option>
+        
+    </select>
+    
+    <button id="payButton" onclick="pay()">Pay</button>
+
+    <script>
+        function pay() {
+            alert("Payment successful!");
+        }
+    </script>
+
+</body>
+</html>

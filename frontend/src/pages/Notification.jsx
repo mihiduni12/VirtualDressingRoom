@@ -1,42 +1,39 @@
 // TotalBill.jsx
 import React from 'react';
-import Logo from '../components/Header/logo';
-import Bill from '../components/Bill/bill';
-import BillLogo from '../components/Bill/BillLogo';
-import BillTopic from '../components/Bill/BillTopic';
+import NotiLogo from '../components/Notifications/NotificationsLogo';
 import Footer from '../components/Footer/Footer';
-import UploadSlip from '../components/Bill/UploadSlip';
-import CardPayment from '../components/Bill/Card';
+import Notifications from '../components/Notifications/notification';
+import NotifiTopic from '../components/Notifications/NotifiTopic';
 
-function TotalBill() {
+function Notification() {
   return (
     <div className='Totalbill'>
-      <div className='bg-[#FBE7C6]'>
-        <BillTopic />
-     
-        <BillLogo />
+      <div className='bg-[#f2626b]'>
+        <NotiLogo />
+      <NotifiTopic />
         <br></br>
         <br></br>
         <br></br>
         <br></br>
       </div>
 
+
       {/* Rest of the content with another color */}
-      <div className='bg-[#B4F8C8]'>
-      <br></br>
+      <div className='bg-[#adf19b]'>
+   
+        <br></br>
+        <br></br>
+        <Notifications/>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
         <br></br>
         <br></br>
         
-      <CardPayment/>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-
         <br></br>
         <br></br>
         <br></br>
@@ -67,4 +64,4 @@ function TotalBill() {
 );
 }
 
-export default TotalBill;
+export default Notification;

@@ -1,4 +1,3 @@
-// TotalBill.jsx
 import React from 'react';
 import Logo from '../components/Header/logo';
 import Bill from '../components/Bill/bill';
@@ -12,8 +11,7 @@ function TotalBill() {
   return (
     <div className='Totalbill'>
       <div className='bg-[#FBE7C6]'>
-        <BillTopic />
-     
+      
         <BillLogo />
         <br></br>
         <br></br>
@@ -67,4 +65,4 @@ function TotalBill() {
 );
 }
 
-export default TotalBill;
+export default CardPayment;

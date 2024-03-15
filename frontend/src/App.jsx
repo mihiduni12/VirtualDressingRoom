@@ -19,6 +19,10 @@ import UpdateItemsCatagory from "./Admin/UpdateItemsCatagory.jsx";
 import { SignedIn, SignedOut, SignInButton, UserButton, UserProfile, ClerkProvider } from "@clerk/clerk-react";
 import SignInPage from "./components/Header/sign-in.jsx";
 import UserProfilePage  from "./components/Header/user-profile.jsx";
+import TotalBill from "./pages/TotalBill.jsx";
+import Notification from "./pages/Notification.jsx";
+import CardPayment from "./pages/CardPayment.jsx";
+
 
 const App = () => {
   console.disableYellowBox = true;
@@ -112,34 +116,15 @@ const fetchCart = async () => {
 };
 console.log(cart)
 
-  // for admin panel
-
-
-
-
-  return (
-        <BrowserRouter>
-        <Routes>
-          {/* <Route path="/" element={<Shop catagories={catagories} fetchCatagories={fetchCatagories} offers={offers} fetchOffers={fetchOffers} />} /> */}
-          {/* <Route path="/reports" element={<Reports />} />
-          <Route path="/products" element={<Products />} />
-          <Route
-            path="/shopInside/:id"
-            element={<ShopInside nuts={nuts} fetchNuts={fetchNuts} snacks={snacks} fetchSnacks={fetchSnacks} sweetners={sweetners} fetchSweetners={fetchSweetners} fetchCartItems={fetchCart} cartItems={cart}/>}
-          />
-          <Route path="/sign-in" element={<SignInPage />} />
-          <Route path="/sign-up" element={<SignedOut />} />
-          <Route path="/profile" element={<UserProfilePage />} /> */}
-
-          for admin panel
-          <Route path="/" element={<Admin/>} />
-          <Route path="/addCatagory" element={<AddCatagory fetchCatagories={fetchCatagories} />} />
-          <Route path="/updateCatagory/:id" element={<UpdateCatagory fetchCatagories={fetchCatagories} />} />
-          <Route path="/ItemsCatagory/:id" element={<ItemsCatagory />} />
-          <Route path="/addItemsCatagory" element={<AddItemsCatagory fetchItemsCatagory={fetchItemsCatagory} />} />
-          <Route path="/updateItemsCatagory/:id" element={<UpdateItemsCatagory fetchCatagories={fetchCatagories} />} />
-        </Routes>
-      </BrowserRouter> 
+  
+  return (    
+    <BrowserRouter>
+    <Routes>
+     
+    <Route path="/" element={<Notification />} />
+      
+    </Routes>
+  </BrowserRouter> 
    
   );
 };

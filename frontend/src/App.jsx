@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import Shop from "./pages/Shop.jsx";
+import Shop from "./pages/shop/Shop.jsx";
 import FoodCatagory from "./components/Organic Items/Content/FoodCatagory.jsx";
 import { Route, Router, Routes } from "react-router";
-import ShopInside from "./pages/ShopInside.jsx";
+import ShopInside from "./pages/shop/ShopInside.jsx";
 import Header from "./components/Header/Header.jsx";
 import { BrowserRouter } from "react-router-dom";
 import Reports from "./pages/Reports.jsx";
-import Products from "./pages/Products.jsx";
+import Products from "./pages/shop/Products.jsx";
 import axios from "axios";
 import Admin from "./Admin/Admin.jsx";
 import AddCatagory from "./Admin/AddCatagory.jsx";
@@ -19,17 +19,17 @@ import UpdateItemsCatagory from "./Admin/UpdateItemsCatagory.jsx";
 import { SignedIn, SignedOut, SignInButton, UserButton, UserProfile, ClerkProvider } from "@clerk/clerk-react";
 import SignInPage from "./components/Header/sign-in.jsx";
 import UserProfilePage  from "./components/Header/user-profile.jsx";
-import TotalBill from "./pages/TotalBill.jsx";
-import Notification from "./pages/Notification.jsx";
-import CardPayment from "./pages/CardPayment.jsx";
-import UploadSlip from "./pages/UploadSlip.jsx";
-import PaymentAdmin from "./pages/PaymentAdmin.jsx";
+import TotalBill from "./pages/pay/TotalBill.jsx";
+import Notification from "./pages/Noti/Notification.jsx";
+import CardPayment from "./pages/pay/CardPayment.jsx";
+import UploadSlip from "./pages/pay/UploadSlip.jsx";
+import PaymentAdmin from "./pages/pay/PaymentAdmin.jsx";
 import Eventpack from "./components/Bill/ddd.jsx";
-import ArtCatorgeries from "./pages/ArtCatorgeries.jsx";
-import ArtHistorical from "./pages/ArtHistorical.jsx";
-import PaymentSuccess from "./pages/Paymentsucess.jsx";
-import SlipUploaded from "./pages/SlipUploaded.jsx";
-import Homepagee from "./pages/Homepagee.jsx";
+import ArtCatorgeries from "./pages/Art/ArtCatorgeries.jsx";
+import ArtHistorical from "./pages/Art/ArtHistorical.jsx";
+import PaymentSuccess from "./pages/pay/Paymentsucess.jsx";
+import SlipUploaded from "./pages/pay/SlipUploaded.jsx";
+import Homepagee from "./pages/Hom/Homepagee.jsx";
 
 
 const App = () => {

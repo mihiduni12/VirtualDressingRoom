@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Products from "../images/food6.jpg";
-import Header from "../components/Header/Header";
+import Header from "../../components/Header/Header";
 import { useParams } from "react-router";
-import GradientOpen3 from "../components/Organic Items/Content/GradientOpen3";
+import GradientOpen3 from "../../components/Organic Items/Content/GradientOpen3";
 import { motion } from "framer-motion";
 import "./product.css";
 

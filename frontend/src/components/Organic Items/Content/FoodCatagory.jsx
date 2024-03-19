@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Nuts from '../../../pages/Shop'
+import Nuts from '../../../pages/shop/Shop'
 import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
 

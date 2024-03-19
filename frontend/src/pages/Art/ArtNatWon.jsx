@@ -1,15 +1,15 @@
 import React from "react";
-import Header from "../components/Header/Header";
-import ForY from "../components/Articles/ForY";
-import LogoArticle from "../components/Articles/LogoArticle";
-import Buttons from "../components/Header/Buttons";
-import SearchBar from "../components/Header/SearchBar";
-import Navbar from "../components/Header/Navbar";
-import ButtonV from "../components/Articles/ButtonV";
-import Footer from "../components/Footer/Footer";
-import Landmarks from "../components/Articles/Landmarks";
+import Header from "../../components/Header/Header";
+import ForY from "../../components/Articles/ForY";
+import LogoArticle from "../../components/Articles/LogoArticle";
+import Buttons from "../../components/Header/Buttons";
+import SearchBar from "../../components/Header/SearchBar";
+import Navbar from "../../components/Header/Navbar";
+import ButtonV from "../../components/Articles/ButtonV";
+import Footer from "../../components/Footer/Footer";
+import NatureArt from "../../components/Articles/NatureArt";
 
-function ArtLandmarks() {
+function ArtNatWon() {
   return (
     <div>
       <div>
@@ -73,7 +73,7 @@ function ArtLandmarks() {
       <br></br>
       <br></br>
 
-      <Landmarks />
+      <NatureArt />
       <br></br>
       <br></br>
       <Footer />
@@ -81,4 +81,4 @@ function ArtLandmarks() {
   );
 }
 
-export default ArtLandmarks;
+export default ArtNatWon;

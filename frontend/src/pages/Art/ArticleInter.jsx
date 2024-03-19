@@ -1,15 +1,14 @@
 import React from "react";
-import Header from "../components/Header/Header";
-import ForY from "../components/Articles/ForY";
-import LogoArticle from "../components/Articles/LogoArticle";
-import Buttons from "../components/Header/Buttons";
-import SearchBar from "../components/Header/SearchBar";
-import Navbar from "../components/Header/Navbar";
-import ButtonV from "../components/Articles/ButtonV";
-import Footer from "../components/Footer/Footer";
-import CulExp from "../components/Articles/CulExp";
+import Header from "../../components/Header/Header";
+import ForY from "../../components/Articles/ForY";
+import LogoArticle from "../../components/Articles/LogoArticle";
+import Buttons from "../../components/Header/Buttons";
+import SearchBar from "../../components/Header/SearchBar";
+import Navbar from "../../components/Header/Navbar";
+import { Footer } from "antd/es/layout/layout";
+import ButtonV from "../../components/Articles/ButtonV";
 
-function ArtCulturalExpr() {
+function ArticleInter() {
   return (
     <div>
       <div>
@@ -62,23 +61,11 @@ function ArtCulturalExpr() {
         <Buttons />
         <SearchBar />
         <Navbar />
+        <ButtonV />
       </div>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-
-      <br></br>
-      <br></br>
-      <br></br>
-
-      <CulExp />
-      <br></br>
-      <br></br>
-      <Footer />
+      <ForY />
     </div>
   );
 }
 
-export default ArtCulturalExpr;
+export default ArticleInter;

@@ -1,7 +1,7 @@
 import React from 'react';
-import BillLogo from '../components/Bill/BillLogo';
-import Footer from '../components/Footer/Footer';
-import Card from '../components/Bill/Card';
+import BillLogo from '../../components/Bill/BillLogo';
+import Footer from '../../components/Footer/Footer';
+import Card from '../../components/Bill/Card';
 
 function CardPayment() {
   return (

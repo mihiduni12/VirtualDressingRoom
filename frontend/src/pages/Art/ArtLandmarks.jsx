@@ -1,14 +1,15 @@
 import React from "react";
-import Header from "../components/Header/Header";
-import ForY from "../components/Articles/ForY";
-import LogoArticle from "../components/Articles/LogoArticle";
-import Buttons from "../components/Header/Buttons";
-import SearchBar from "../components/Header/SearchBar";
-import Navbar from "../components/Header/Navbar";
-import { Footer } from "antd/es/layout/layout";
-import ButtonV from "../components/Articles/ButtonV";
+import Header from "../../components/Header/Header";
+import ForY from "../../components/Articles/ForY";
+import LogoArticle from "../../components/Articles/LogoArticle";
+import Buttons from "../../components/Header/Buttons";
+import SearchBar from "../../components/Header/SearchBar";
+import Navbar from "../../components/Header/Navbar";
+import ButtonV from "../../components/Articles/ButtonV";
+import Footer from "../../components/Footer/Footer";
+import Landmarks from "../../components/Articles/Landmarks";
 
-function ArticleInter() {
+function ArtLandmarks() {
   return (
     <div>
       <div>
@@ -61,11 +62,23 @@ function ArticleInter() {
         <Buttons />
         <SearchBar />
         <Navbar />
-        <ButtonV />
       </div>
-      <ForY />
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+
+      <br></br>
+      <br></br>
+      <br></br>
+
+      <Landmarks />
+      <br></br>
+      <br></br>
+      <Footer />
     </div>
   );
 }
 
-export default ArticleInter;
+export default ArtLandmarks;

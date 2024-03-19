@@ -1,13 +1,13 @@
 import React from "react";
-import Header from "../components/Header/Header";
-import ForY from "../components/Articles/ForY";
-import LogoArticle from "../components/Articles/LogoArticle";
-import Buttons from "../components/Header/Buttons";
-import SearchBar from "../components/Header/SearchBar";
-import Navbar from "../components/Header/Navbar";
-import Footer from "../components/Footer/Footer";
-import ButtonV from "../components/Articles/ButtonV";
-import Cator from "../components/Articles/Cator";
+import Header from "../../components/Header/Header";
+import ForY from "../../components/Articles/ForY";
+import LogoArticle from "../../components/Articles/LogoArticle";
+import Buttons from "../../components/Header/Buttons";
+import SearchBar from "../../components/Header/SearchBar";
+import Navbar from "../../components/Header/Navbar";
+import Footer from "../../components/Footer/Footer";
+import ButtonV from "../../components/Articles/ButtonV";
+import Cator from "../../components/Articles/Cator";
 
 function ArtCatorgeries() {
   return (

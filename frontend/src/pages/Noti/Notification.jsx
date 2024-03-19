@@ -1,9 +1,9 @@
 // TotalBill.jsx
 import React from 'react';
-import NotiLogo from '../components/Notifications/NotificationsLogo';
-import Footer from '../components/Footer/Footer';
-import Notifications from '../components/Notifications/notification';
-import NotifiTopic from '../components/Notifications/NotifiTopic';
+import NotiLogo from '../../components/Notifications/NotificationsLogo';
+import Footer from '../../components/Footer/Footer';
+import Notifications from '../../components/Notifications/notification';
+import NotifiTopic from '../../components/Notifications/NotifiTopic';
 
 function Notification() {
   return (

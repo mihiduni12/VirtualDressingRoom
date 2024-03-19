@@ -1,8 +1,8 @@
 import React from 'react';
-import BillLogo from '../components/Bill/BillLogo';
+import BillLogo from '../../components/Bill/BillLogo';
 
-import Footer from '../components/Footer/Footer';
-import Slip from '../components/Bill/Slip';
+import Footer from '../../components/Footer/Footer';
+import Slip from '../../components/Bill/Slip';
 
 function UploadSlip() {
   return (

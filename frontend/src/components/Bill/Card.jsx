@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Card = () => {
   const [cardNumber, setCardNumber] = useState("");
@@ -93,12 +94,14 @@ const Card = () => {
             />
           </div>
           <br></br>
+          <Link to="/success">
           <button
             className="bg-[#44d658] text-Black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             type="submit"
           >
-            Submit Payment
+            Confirm Payment
           </button>
+          </Link>
         </form>
       </div>
     </div>

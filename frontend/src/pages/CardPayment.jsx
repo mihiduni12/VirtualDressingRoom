@@ -1,6 +1,5 @@
 import React from 'react';
 import BillLogo from '../components/Bill/BillLogo';
-import Eventpack from '../components/Bill/ddd';
 import Footer from '../components/Footer/Footer';
 import Card from '../components/Bill/Card';
 
@@ -22,7 +21,7 @@ function CardPayment() {
         <br></br>
         <br></br>
         
-      <Eventpack/>
+      <Card/>
         <br></br>
         <br></br>
         <br></br>

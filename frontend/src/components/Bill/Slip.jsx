@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Slip = () => {
   const [file, setFile] = useState(null);
@@ -38,12 +39,15 @@ const Slip = () => {
                 required
               />
             </div>
+            <Link to="/uploaded">
+     
             <button
               className="bg-[#44d658] text-Black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               type="submit"
             >
               Upload
             </button>
+            </Link>
           </form>
         </div>
       </div>

@@ -27,6 +27,10 @@ import PaymentAdmin from "./pages/PaymentAdmin.jsx";
 import Eventpack from "./components/Bill/ddd.jsx";
 import ArtCatorgeries from "./pages/ArtCatorgeries.jsx";
 import ArtHistorical from "./pages/ArtHistorical.jsx";
+import PaymentSuccess from "./pages/Paymentsucess.jsx";
+import SlipUploaded from "./pages/SlipUploaded.jsx";
+import Homepagee from "./pages/Homepagee.jsx";
+
 
 const App = () => {
   console.disableYellowBox = true;
@@ -124,9 +128,17 @@ console.log(cart)
   return (    
     <BrowserRouter>
     <Routes>
-     
-    <Route path="/" element={<ArtHistorical />} />
-      
+         
+    <Route path="/" element={<Homepagee />} />
+    <Route path="/checkout/card" element={<CardPayment />} />
+    <Route path="/checkout/slip" element={<UploadSlip />} />
+    <Route path="/success" element={<PaymentSuccess />} />
+    <Route path="/uploaded" element={<SlipUploaded />} /> 
+    <Route path="/home" element={<Homepagee />} /> 
+    <Route path="/homee" element={<Homepagee />} /> 
+    <Route path="/pay" element={<TotalBill />} /> 
+
+
     </Routes>
   </BrowserRouter> 
    

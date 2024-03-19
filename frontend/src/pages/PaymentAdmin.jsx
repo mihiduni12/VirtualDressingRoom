@@ -1,12 +1,9 @@
 // TotalBill.jsx
 import React from 'react';
+import ReceivedSlips from '../components/Bill/ReceivedSlips';
+import PALogo from '../components/Bill/PALogo';
 
-import BillLogo from '../components/Bill/BillLogo';
-import BillTopic from '../components/Bill/BillTopic';
-import Footer from '../components/Footer/Footer';
-import Bill from '../components/Bill/TBill';
-
-function TotalBill() {
+function PaymentAdmin() {
   // Sample items array
   const items = [
     { name: 'Item 1', amount: 10 },
@@ -17,8 +14,7 @@ function TotalBill() {
   return (
     <div className='Totalbill'>
       <div className='bg-[#FBE7C6]'>
-        <BillTopic />
-        <BillLogo />
+       <PALogo/>
         <br />
         <br />
         <br />
@@ -26,11 +22,10 @@ function TotalBill() {
       </div>
 
       {/* Rest of the content with another color */}
-      <div className='bg-[#acf9f5]'>
+      <div className='bg-[#879d62]'>
         <br />
         <br />
-        <br />
-        <Bill items={items} /> {/* Pass items array to Bill component */}
+        <ReceivedSlips/>
         <br />
         <br />
         <br />
@@ -38,9 +33,8 @@ function TotalBill() {
         <br />
       </div>
 
-      <Footer />
     </div>
   );
 }
 
-export default TotalBill;
+export default PaymentAdmin;

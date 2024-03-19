@@ -6,9 +6,6 @@ import MongoClient from "mongodb";
 
 const router = express();
 
-
-// Routes for Catagories
-// for Read
 router.get("/api/catagories", (req, res) => {
   Catagory.find()
     .then((item) => {
@@ -54,7 +51,6 @@ router.get("/api/catagories/:id", (req, res) => {
 });
 
 // Routes for Nuts & Seeds
-// For Read
 router.get("/api/Nuts&Seeds", (req, res) => {
   Products.find({ type: "nuts&seeds" })
     .then((item) => {
@@ -184,8 +180,7 @@ router.delete("/catagories/:id", (req, res) => {
     .catch((err) => console.log(err)); // Use console.log to log errors
 });
 
-// For Nuts
-// Create a file for save the image
+
 const storageForProducts = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, "public/nuts&seeds");
@@ -202,7 +197,7 @@ const uploadProducts = multer({
   storage: storageForProducts,
 });
 
-// Create new items
+
 router.post("/products", uploadProducts.single("file"), (req, res) => {
   console.log(req.body.name);
   Products.create({
@@ -295,8 +290,6 @@ router.post("/list", (req, res) => {
       res.status(500).json({ error: "Could not create the cart item" });
     });
 });
-
-
 
 // router.delete("/list/:id", (req, res) => {
 //   db.collection("Items")

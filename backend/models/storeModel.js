@@ -65,3 +65,18 @@ const ItemsSchema = new Schema({
 });
 
 export const List = mongoose.model("items", ItemsSchema);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

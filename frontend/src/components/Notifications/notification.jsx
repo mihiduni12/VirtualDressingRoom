@@ -1,7 +1,8 @@
 // Notifications.jsx
 import React, { useState } from "react";
 
-const Notifications = () => {
+function Notifications()
+{
   const [notifications, setNotifications] = useState([
     {
       id: 1,
@@ -17,6 +18,12 @@ const Notifications = () => {
     },
     {
       id: 3,
+      description: "Sample notification description 2.",
+      date: "2022-01-02",
+      time: "2:45 PM",
+    },
+    {
+      id: 4,
       description: "Sample notification description 2.",
       date: "2022-01-02",
       time: "2:45 PM",

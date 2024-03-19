@@ -22,7 +22,11 @@ import UserProfilePage  from "./components/Header/user-profile.jsx";
 import TotalBill from "./pages/TotalBill.jsx";
 import Notification from "./pages/Notification.jsx";
 import CardPayment from "./pages/CardPayment.jsx";
-
+import UploadSlip from "./pages/UploadSlip.jsx";
+import PaymentAdmin from "./pages/PaymentAdmin.jsx";
+import Eventpack from "./components/Bill/ddd.jsx";
+import ArtCatorgeries from "./pages/ArtCatorgeries.jsx";
+import ArtHistorical from "./pages/ArtHistorical.jsx";
 
 const App = () => {
   console.disableYellowBox = true;
@@ -121,7 +125,7 @@ console.log(cart)
     <BrowserRouter>
     <Routes>
      
-    <Route path="/" element={<Notification />} />
+    <Route path="/" element={<ArtHistorical />} />
       
     </Routes>
   </BrowserRouter> 

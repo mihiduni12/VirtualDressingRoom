@@ -1,10 +1,10 @@
 import React from 'react';
 import BillLogo from '../components/Bill/BillLogo';
-import Eventpack from '../components/Bill/ddd';
-import Footer from '../components/Footer/Footer';
-import Card from '../components/Bill/Card';
 
-function CardPayment() {
+import Footer from '../components/Footer/Footer';
+import Slip from '../components/Bill/Slip';
+
+function UploadSlip() {
   return (
     <div className='Totalbill'>
       <div className='bg-[#FBE7C6]'>
@@ -17,17 +17,10 @@ function CardPayment() {
       </div>
 
       {/* Rest of the content with another color */}
-      <div className='bg-[#B4F8C8]'>
-      <br></br>
-        <br></br>
-        <br></br>
+      <div className='bg-[#879d62]'>
+      
         
-      <Eventpack/>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
+      <Slip/>
         {/* Add other components as needed */}
       </div>
 
@@ -37,4 +30,4 @@ function CardPayment() {
 );
 }
 
-export default CardPayment;
+export default UploadSlip;

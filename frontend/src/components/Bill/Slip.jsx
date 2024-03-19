@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const UploadSlip = () => {
+const Slip = () => {
   const [file, setFile] = useState(null);
 
   const handleFileChange = (e) => {
@@ -39,7 +39,7 @@ const UploadSlip = () => {
               />
             </div>
             <button
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              className="bg-[#44d658] text-Black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               type="submit"
             >
               Upload
@@ -50,5 +50,5 @@ const UploadSlip = () => {
     </div>
   );
 };
-
-export default UploadSlip;
+8
+export default Slip;

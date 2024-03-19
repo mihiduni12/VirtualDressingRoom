@@ -17,8 +17,6 @@ function Notification() {
         <br></br>
       </div>
 
-
-      {/* Rest of the content with another color */}
       <div className='bg-[#adf19b]'>
    
         <br></br>
@@ -26,36 +24,6 @@ function Notification() {
         <Notifications/>
         <br></br>
         <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-
-        <br></br>
-        {/* Add other components as needed */}
       </div>
 
   <Footer />

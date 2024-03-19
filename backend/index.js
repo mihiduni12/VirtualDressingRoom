@@ -5,7 +5,6 @@ import catagoryRoutes from "./routes/storeRouter.js";
 import React from "react";
 import mongoose from "mongoose";
 import { MongoClient } from "mongodb";
-
 import { Catagory } from "./models/storeModel.js";
 
 import * as dotenv from "dotenv";

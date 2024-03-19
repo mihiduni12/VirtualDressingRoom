@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const CardPayment = () => {
+const Card = () => {
   const [cardNumber, setCardNumber] = useState("");
   const [expiryDate, setExpiryDate] = useState("");
   const [cvv, setCvv] = useState("");
@@ -32,8 +32,8 @@ const CardPayment = () => {
   };
 
   return (
-    <div className="max-w-sm mx-auto bg-white shadow-md rounded-lg overflow-hidden">
-      <div className="px-6 py-4">
+    <div className="max-w-sm mx-auto bg-white shadow-md rounded-lg overflow-hidden ">
+      <div className="px-6 py-4 " >
         <h2 className="text-lg font-semibold mb-2">Card Payment</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
@@ -92,9 +92,9 @@ const CardPayment = () => {
               required
             />
           </div>
-          
+          <br></br>
           <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="bg-[#44d658] text-Black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             type="submit"
           >
             Submit Payment
@@ -105,4 +105,4 @@ const CardPayment = () => {
   );
 };
 
-export default CardPayment;
+export default Card;

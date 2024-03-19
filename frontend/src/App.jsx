@@ -72,8 +72,6 @@ const App = () => {
     }
   };
 
-
-
   const fetchCatagories = async () => {
     try {
       const response = await axios.get("/api/catagories");

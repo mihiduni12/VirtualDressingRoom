@@ -23,7 +23,7 @@ export default function Buttons() {
             </button>
           </>
         ) : (
-          <button class="font-Cairo font-[12pt] bg-BrownLi2 hover:bg-yellowDr text-Black hover:text-white py-2 px-4  hover:border-blue-500 mr-[46.2px] md-[60px]  float-right rounded">
+          <button class="font-Cairo font-[12pt] bg-BrownLi2 hover:bg-yellowDr text-Black hover:text-white py-2 px-4  hover:border-blue-500 mr-[90px] md-[60px]  float-right rounded">
             <Link to="/sign-in">Sign in</Link>
           </button>
         )}

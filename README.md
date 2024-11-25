@@ -1,4 +1,4 @@
- <h1>Virtual Dressing Room</h1>
+ <h1>Virtual Dressing Room (Dress-On)</h1>
 The Virtual Dressing Room is an innovative web application that allows users to explore and personalize their fashion experience. It enables users to upload an image, try on clothing items virtually, and curate their own virtual closet. This app leverages the power of the MERN stack (MongoDB, Express.js, React, Node.js) to provide a seamless, feature-rich user experience.
 
 <h2>Key Features </h2>

@@ -1,27 +1,24 @@
 /** @type {import('tailwindcss').Config} */
 export const important = true;
-export const content = [
-  "./index.html",
-  "./src/**/*.{js,ts,jsx,tsx}",
-];
+export const content = ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"];
 export const theme = {
   extend: {
     spacing: {
       100: "100px",
     },
     fontFamily: {
-      Spirax: ['Spirax', "system-ui"],
-      Coda: ['Coda', "system-ui"],
-      Natural: ['Kay Pho Du', "serif"],
-      CantoraOne: ['Cantora One', "sans-serif"],
-      Abel: ['Abel', "sans-serif"],
-      Cairo: ['Cairo', "sans-serif"],
-      Barlow: ['Barlow', "sans-serif"],
-      FiraSans: ['Fira Sans', "sans-serif"],
-      Satisfy: ['Satisfy', "cursive"],
-      Sacramento: ['Sacramento', "cursive"],
-      BadScript: ['Bad Script', "cursive"],
-      Protest: ['Protest Revolution', "sans-serif"]
+      Spirax: ["Spirax", "system-ui"],
+      Coda: ["Coda", "system-ui"],
+      Natural: ["Kay Pho Du", "serif"],
+      CantoraOne: ["Cantora One", "sans-serif"],
+      Abel: ["Abel", "sans-serif"],
+      Cairo: ["Cairo", "sans-serif"],
+      Barlow: ["Barlow", "sans-serif"],
+      FiraSans: ["Fira Sans", "sans-serif"],
+      Satisfy: ["Satisfy", "cursive"],
+      Sacramento: ["Sacramento", "cursive"],
+      BadScript: ["Bad Script", "cursive"],
+      Protest: ["Protest Revolution", "sans-serif"],
     },
   },
   colors: {
@@ -41,19 +38,23 @@ export const theme = {
     green: "#8c9861",
     greenWh: "#ddecd2",
     greenNa: "#439448",
-    greenLi: "#effdf1"
+    greenLi: "#effdf1",
+    black: "#000000",
+    white: "#ffffff",
+    red: "#ff0000",
+    lightRed: "#ff4d4d",
   },
   backgroundImage: {
-    'food': "url('./images/food2.jpg')",
+    food: "url('./images/food2.jpg')",
   },
   animation: {
-    'infinite-scroll': 'infinite-scroll 25s linear infinite',
+    "infinite-scroll": "infinite-scroll 25s linear infinite",
   },
   keyframes: {
-    'infinite-scroll': {
-      from: { transform: 'translateX(0)' },
-      to: { transform: 'translateX(-100%)' },
-    }
-  }
+    "infinite-scroll": {
+      from: { transform: "translateX(0)" },
+      to: { transform: "translateX(-100%)" },
+    },
+  },
 };
 export const plugins = [];

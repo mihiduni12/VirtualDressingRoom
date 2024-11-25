@@ -5,20 +5,26 @@ import { Route, Router, Routes } from "react-router";
 import ShopInside from "./pages/shop/ShopInside.jsx";
 import Header from "./components/Header/Header.jsx";
 import { BrowserRouter } from "react-router-dom";
-import Reports from "./pages/Reports.jsx";
 import Products from "./pages/shop/Products.jsx";
 import axios from "axios";
 import Admin from "./Admin/Admin.jsx";
 import AddCatagory from "./Admin/AddCatagory.jsx";
 import Image from "./components/Organic Items/Content/image.jsx";
-import "./App.css"
+import "./App.css";
 import UpdateCatagory from "./Admin/UpdateCatagory.jsx";
 import ItemsCatagory from "./Admin/ItemsCatagory.jsx";
 import AddItemsCatagory from "./Admin/AddItemsCatagory.jsx";
 import UpdateItemsCatagory from "./Admin/UpdateItemsCatagory.jsx";
-import { SignedIn, SignedOut, SignInButton, UserButton, UserProfile, ClerkProvider } from "@clerk/clerk-react";
+import {
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  UserButton,
+  UserProfile,
+  ClerkProvider,
+} from "@clerk/clerk-react";
 import SignInPage from "./components/Header/sign-in.jsx";
-import UserProfilePage  from "./components/Header/user-profile.jsx";
+import UserProfilePage from "./components/Header/user-profile.jsx";
 import TotalBill from "./pages/pay/TotalBill.jsx";
 import Notification from "./pages/Noti/Notification.jsx";
 import CardPayment from "./pages/pay/CardPayment.jsx";
@@ -30,116 +36,70 @@ import ArtHistorical from "./pages/Art/ArtHistorical.jsx";
 import PaymentSuccess from "./pages/pay/Paymentsucess.jsx";
 import SlipUploaded from "./pages/pay/SlipUploaded.jsx";
 import Homepagee from "./pages/Hom/Homepagee.jsx";
+import CarRental from "./pages/rent/CarRent.jsx";
+import VanRental from "./pages/rent/VanRent.jsx";
+import BusRental from "./pages/rent/BusRent.jsx";
+import VehicalRental from "./pages/rent/VehicleRent.jsx";
+import Cars from "./components/rental/Cars.jsx";
+import AddCarForm from "./pages/rent/AddCarsForm.jsx";
+import AdminCarList from "./pages/rent/AdminViewCars.jsx";
+import CheckView from "./pages/rent/CheckView.jsx";
+import UpdateCarForm from "./pages/rent/UpdateCarForm.jsx";
+import AdminRentList from "./pages/rent/AdminViewRents.jsx";
 
+
+import Virtual from "./pages/rent/Form.jsx";
+import Vcloset from "./pages/rent/Closet.jsx";
+import FitOn from "./pages/fit-on/FitOn.jsx";
 
 const App = () => {
   console.disableYellowBox = true;
 
-  const [nuts, setNuts] = useState([]);
-  const [snacks, setSnacks] = useState([]);
-  const [sweetners, setSweetners] = useState([]);
-  const [catagories, setCatagories] = useState([]);
-  const [offers, setOffers] = useState([]);
-  const [cart, setCart] = useState([]);
 
   axios.defaults.baseURL = `http://localhost:5012`;
 
-  const fetchNuts = async () => {
-    try {
-      const response = await axios.get("/api/Nuts&Seeds");
-      setNuts(response.data.data);
-      console.log(response);
-    } catch (error) {
-      console.error("Error fetching users:", error);
-    }
-  };
-  const fetchSnacks = async () => {
-    try {
-      const response = await axios.get("/api/Snacks");
-      setSnacks(response.data.data);
-      console.log(response);
-    } catch (error) {
-      console.error("Error fetching snacks:", error);
-    }
-  };
-  const fetchSweetners = async () => {
-    try {
-      const response = await axios.get("/api/Sweetners");
-      setSweetners(response.data.data);
-      console.log(response);
-    } catch (error) {
-      console.error("Error fetching sweetners:", error);
-    }
-  };
-
-  const fetchCatagories = async () => {
-    try {
-      const response = await axios.get("/api/catagories");
-      setCatagories(response.data.data);
-      console.log(response);
-    } catch (error) {
-      console.error("Error fetching users:", error);
-    }
-  };
-
-  const fetchItemsCatagory = async () => {
-    try {
-      const response = await axios.get("/api/catagories");
-      setCatagories(response.data.data);
-      console.log(response);
-    } catch (error) {
-      console.error("Error fetching users:", error);
-    }
-  };
-
-  const fetchOffers = async () => {
-    try {
-      const response = await axios.get("/api/offers");
-      setOffers(response.data.data);
-      console.log(response);
-    } catch (error) {
-      console.error("Error fetching users:", error);
-    }
-  };
-
-  // for cart
-//   const fetchCart = () => {
-//     fetch("http://localhost:5000/list")
-//         .then((res) => res.json())
-//         .then((data) => {
-//             setCart(data);
-//             console.log(cart)
-//         });
-// };
-const fetchCart = async () => {
-  try {
-    const response = await axios.get("/api/lists");
-    setCart(response.data.data);
-    console.log(response);
-  } catch (error) {
-    console.error("Error fetching users:", error);
-  }
-};
-console.log(cart)
-
-  
-  return (    
+  return (
     <BrowserRouter>
-    <Routes>
-         
-    <Route path="/" element={<Homepagee />} />
-    <Route path="/checkout/card" element={<CardPayment />} />
-    <Route path="/checkout/slip" element={<UploadSlip />} />
-    <Route path="/success" element={<PaymentSuccess />} />
-    <Route path="/uploaded" element={<SlipUploaded />} /> 
-    <Route path="/home" element={<Homepagee />} /> 
-    <Route path="/homee" element={<Homepagee />} /> 
-    <Route path="/pay" element={<TotalBill />} /> 
+      <Routes>
+        <Route path="/" element={<Homepagee />} />
+        <Route path="/checkout/card" element={<CardPayment />} />
+        <Route path="/checkout/slip" element={<UploadSlip />} />
+        <Route path="/success" element={<PaymentSuccess />} />
+        <Route path="/uploaded" element={<SlipUploaded />} />
+        <Route path="/home" element={<Homepagee />} />
+        <Route path="/homee" element={<Homepagee />} />
+        <Route path="/pay" element={<TotalBill />} />
+
+        <Route path="/car" element={<CarRental />} />
+        <Route path="/van" element={<VanRental />} />
+        <Route path="/bus" element={<BusRental />} />
+        <Route path="/Vform" element={<Virtual />} />
+        <Route path="/closet" element={<Vcloset />} />
+        <Route path="/Vehicle/:id" element={<VehicalRental />} />
+        {/* <Route path="/vehicle" component={VehicalRental} /> */}
+
+        <Route path="/car1" element={<CarRental />} />
+        <Route path="/van1" element={<VanRental />} />
+        <Route path="/bus1" element={<BusRental />} />
+        <Route path="/car2" element={<CarRental />} />
+        <Route path="/van2" element={<VanRental />} />
+        <Route path="/bus2" element={<BusRental />} />
+       
 
 
-    </Routes>
-  </BrowserRouter> 
-   
+
+
+        <Route path="/Transport" element={<CarRental />} />
+        <Route path="/add-car" element={<AddCarForm />} />
+        <Route path="/update-car/:id" element={<UpdateCarForm />} />
+        <Route path="/admin-view" element={<AdminCarList />} />
+        <Route path="/admin-rent" element={<AdminRentList />} />
+        <Route path="/check" element={<CheckView />} />
+
+
+        <Route path="/upload" element={<FitOn/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 };
 export default App;
